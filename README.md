@@ -21,6 +21,7 @@ The analyser cannot have input voltages above 40V RMS, for use with high power a
 Place the following components to reduce the voltage the analysers measured by -6dBV:
 
 R5, R7, R9, R12 = 0r
+
 R6, R8, R10, R11, R13, R14, R15, R16 = 3k3
 
 Voltage divider is a better option in general because it introduces less noise due to the lower resistances.
@@ -30,6 +31,7 @@ Voltage divider is a better option in general because it introduces less noise d
 Place the following components to reduce the voltage the analysers measured by -10dBV:
 
 R5, R6, R7, R8, R9, R10, R11, R12 = 52k
+
 R13, R14, R15, R16 = 72k
 
 
