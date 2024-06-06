@@ -20,9 +20,11 @@ The analyser cannot have input voltages above 40V RMS, for use with high power a
 
 Place the following components to reduce the voltage the analysers measured by -6dBV:
 
-R5, R7, R9, R12 = 0r
+* R5, R7, R9, R12 = 0r
 
-R6, R8, R10, R11, R13, R14, R15, R16 = 3k3
+* R6, R8, R10, R11, R13, R14, R15, R16 = 3k3
+
+* All jumpers are open-circuit.
 
 Voltage divider is a better option in general because it introduces less noise due to the lower resistances.
 
@@ -30,10 +32,23 @@ Voltage divider is a better option in general because it introduces less noise d
 
 Place the following components to reduce the voltage the analysers measured by -10dBV:
 
-R5, R6, R7, R8, R9, R10, R11, R12 = 52k
+* R5, R6, R7, R8, R9, R10, R11, R12 = 52k
 
-R13, R14, R15, R16 = 72k
+* R13, R14, R15, R16 = 72k
 
+* All jumpers are open-circuit.
+
+### Using the current sense
+
+The right channel measures the voltage drop across the current sense resistor. Place an SMD resistor in any of the positions: R1, R2, R3, or R4. All of these are connected in parallel, so you can place more than one if you wish, just work out the resulting value. The smaller the resisor value the more noise will appear in the current measurement, the larger the resistor value the more it will load the circuit. Try and use a current sense 100 to 10 times smaller than the load.
+
+### Disabling the attenuator
+
+Do not place any resistors and short solder jumpers JP1, JP2, JP3, JP4.
+
+### Disabling the current sense resistor
+
+Short the solder jumper JP5.
 
 ## Questions
 
